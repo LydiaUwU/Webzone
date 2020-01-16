@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+div {
+    margin: 0 auto;
+    width: 50%;
+}
+
+a {
+    color: red;
+}
+
+h1 {
+    color: red;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    color: red;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    color: red;
+    font-family: 'Gayathri', sans-serif;
+}
+
+p {
+    color: red;
+    font-family: 'Gayathri', sans-serif;
+    font-weight: light;
+}
