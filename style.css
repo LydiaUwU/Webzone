@@ -25,16 +25,16 @@ body {
 
 h1 {
     color: #ff0000;
-    font-family: 'Gayathri', sans-serif;
-    font-size: 75px;
+    font-family: "Helvetica Neue", 'Gayathri', sans-serif;
     font-weight: bold;
+    font-size: 75px;
     margin: 5px;
     padding: 0px;
 }
 
 h2 {
     color: #ff0000;
-    font-family: 'Gayathri', sans-serif;
+    font-family: "Helvetica Neue", 'Gayathri', sans-serif;
     font-size: 50px;
     margin-left: 5px;
     margin-bottom: -15px;
@@ -44,7 +44,7 @@ h2 {
 
 h3 {
     color: #ff0000;
-    font-family: 'Gayathri', sans-serif;
+    font-family: "Helvetica Neue", 'Gayathri', sans-serif;
     font-size: 35px;
     margin-left: 5px;
     margin-bottom: -10px;
@@ -54,13 +54,38 @@ h3 {
 
 p {
     color: #ff0000;
-    font-family: 'Gayathri', sans-serif;
+    font-family: "Helvetica", 'Gayathri', sans-serif;
     font-weight: light;
     font-size: 30px;
     margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    padding: 0px;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: li;
+    margin-left: 5px;
+    padding-left: 0px;
+}
+
+li {
+    color: #ff0000;
+    font-family: "Helvetica Neue", 'Gayathri', sans-serif;
+    font-weight: light;
+    font-size: 30px;
+    margin-left: 0px;
     margin-top: 0px;
     margin-bottom: -5px;
     padding: 0px;
+}
+
+li:before {
+    font-family: "Helvetica", Arial, sans-serif;
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+    margin-right: 0.25em;
 }
 
 a.link:link {color:#ff0000;text-decoration:none;}
