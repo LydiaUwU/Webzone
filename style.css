@@ -23,6 +23,13 @@ body {
     overflow: auto;
 }
 
+.logo {
+    height: 100px;
+    width: auto;
+    margin: 10px 5px 0;
+    padding: 0px;
+}
+
 h1 {
     color: #ff0000;
     font-family: "Helvetica Neue", 'Gayathri', sans-serif;
@@ -91,3 +98,7 @@ li:before {
 a.link:link {color:#ff0000;text-decoration:none;}
 a.link:visited {color:#ff0000;text-decoration:none;}
 a.link:hover {text-decoration:underline;}
+
+.yurt {
+    margin-top: 0;
+}
