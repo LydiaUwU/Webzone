@@ -62,7 +62,7 @@ h3 {
 p {
     color: #ff0000;
     font-family: "Helvetica", 'Gayathri', sans-serif;
-    font-weight: light;
+    font-weight: lighter;
     font-size: 30px;
     margin-left: 5px;
     margin-top: 5px;
@@ -80,7 +80,7 @@ ol {
 li {
     color: #ff0000;
     font-family: "Helvetica Neue", 'Gayathri', sans-serif;
-    font-weight: light;
+    font-weight: lighter;
     font-size: 30px;
     margin-left: 0px;
     margin-top: 0px;
@@ -101,4 +101,10 @@ a.link:hover {text-decoration:underline;}
 
 .yurt {
     margin-top: 0;
+}
+
+.wheel {
+    margin-left: 5px;
+    margin-top: 20px;
+    alignment: center;
 }
