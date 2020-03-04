@@ -50,7 +50,6 @@ function windowResized() {
     let startX = calcStartX();
     let startY = calcStartY();
     for (let i = 0; i < boxes.length; i++) {
-        console.log('piss: ' + i);
         boxes[i].move(startX, startY);
     }
 }
@@ -78,8 +77,6 @@ class Box {
     move(startX, startY) {
         this.startX = startX;
         this.startY = startY;
-
-        console.log('Width: ' + startX + '. Height: ' + startY + '.')
     }
 
     update() {
