@@ -1,5 +1,7 @@
 //Shoutouts to Max Cooper!
 
+import {resizeCanvas, windowHeight, windowWidth} from "p5/global";
+
 let initCell;
 
 function setup() {
