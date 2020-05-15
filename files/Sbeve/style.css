@@ -1,0 +1,14 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.background {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
