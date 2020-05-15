@@ -1,10 +1,12 @@
 // Made by Lydia MacBride for Radd.
 // Sbeve is literally just vibing.
 
-let imSbeve; let sbeve; let starField; let hWidth; let hHeight; let mouseHeld; let origin;
+let sbeveDefault; let sbeveDizzy; let sbeveHappy; let sbeve; let starField; let hWidth; let hHeight; let mouseHeld; let origin;
 
 function preload() {
-    imSbeve = loadImage('sbeve3.png');
+    sbeveDefault = loadImage('sbeveDefault.png');
+    sbeveDizzy = loadImage('sbeveDizzy.png');
+    sbeveHappy = loadImage('sbeveHappy.png');
 }
 
 function setup() {
@@ -52,7 +54,7 @@ class Sbeve {
 
     constructor() {
         this.pos = createVector(0, 0);
-        this.size = createVector(imSbeve.width, imSbeve.height);
+        this.size = createVector(sbeveDefault.width, sbeveDefault.height);
         this.momentum = createVector(0, 0);
         this.lastPos = createVector(0, 0);
         this.targetPos = createVector(0, 0);
@@ -92,10 +94,15 @@ class Sbeve {
             this.clicked = mouseHeld;
         }
 
-        // fill(255);
-        // rect(this.pos.x, this.pos.y, this.size.x, this.size.y);
-
-        image(imSbeve, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
+        if (this.clicked) {
+            image(sbeveDizzy, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
+        }
+        else if (this.pos.mag() > 50) {
+            image(sbeveDefault, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
+        }
+        else {
+            image(sbeveHappy, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
+        }
 
         this.momentum.mult(this.friction);
     }
