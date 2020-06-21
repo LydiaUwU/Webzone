@@ -95,10 +95,10 @@ class Sbeve {
         }
 
         if (this.clicked) {
-            image(sbeveDizzy, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
+            image(sbeveDefault, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
         }
         else if (this.pos.mag() > 50) {
-            image(sbeveDefault, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
+            image(sbeveDizzy, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
         }
         else {
             image(sbeveHappy, this.pos.x - (this.size.x / 2), this.pos.y - (this.size.y / 2), this.size.x, this.size.y);
