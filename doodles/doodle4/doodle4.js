@@ -93,8 +93,6 @@ document.body.onkeypress = function(e){
 }
 
 class Cell {
-    alive;
-
     constructor(xIndex, yIndex, size) {
         this.xIndex = xIndex;
         this.yIndex = yIndex;

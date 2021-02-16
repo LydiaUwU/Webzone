@@ -1,6 +1,6 @@
 //Shoutouts to Max Cooper!
 
-import {resizeCanvas, windowHeight, windowWidth} from "p5/global";
+// import {resizeCanvas, windowHeight, windowWidth} from "p5/global";
 
 let initCell;
 
@@ -31,8 +31,6 @@ function getRandomInt(min, max) {
 }
 
 class Cell {
-    depth; xpos; ypos; width; height; type; children;
-
     constructor(depth, xpos, ypos, width, height, type) {
         this.depth = depth;
         this.xpos = xpos;

@@ -51,8 +51,6 @@ function mod(n, m) {
 }
 
 class Cell {
-    alive;
-
     constructor(xIndex, yIndex, size) {
         this.xIndex = xIndex;
         this.yIndex = yIndex;
