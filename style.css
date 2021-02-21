@@ -25,6 +25,14 @@ body {
     overflow: auto;
 }
 
+.lydia-logo {
+    height: 5px;
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
 .logo {
     height: 100px;
     width: auto;
