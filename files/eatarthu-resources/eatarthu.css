@@ -5,6 +5,14 @@ body {
     position: relative;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
 a {
     padding: 0;
     margin: 0;
@@ -24,10 +32,19 @@ a:hover, a:focus {
     top: 2rem;
     left: 2rem;
     padding: 0;
-    margin-right: 0;
-    width: 15%;
     overflow: hidden;
     z-index: 100;
+}
+
+#id {
+    position: absolute;
+    float: right;
+    top: 2rem;
+    right: 2rem;
+    padding: 0;
+    overflow: hidden;
+    z-index: 100;
+    font-style: italic;
 }
 
 #eatarthu-div {
